@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kotresh | Unity Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Unity developer portfolio featuring multiplayer racing games, Kinect gesture games, VR and mixed reality, LiDAR interactive walls, ESP32 cycling, and large-screen event experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark">K</span>
+        <span>Kotresh Unity Dev</span>
+      </a>
+      <nav class="nav-links" aria-label="Portfolio sections">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Unity Interactive Experience Developer</p>
+          <h1>Kotresh builds games for screens, sensors, events, and real players.</h1>
+          <p class="hero-copy">
+            Multiplayer racing, Kinect gesture control, VR punching, LiDAR walls,
+            ESP32 cycling, touchscreen memory games, and webcam-based draw-to-life
+            experiences built with Unity and C#.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Work</a>
+            <a class="button secondary" href="#contact">Hire Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="Portfolio highlights">
+        <div>
+          <strong>Unity</strong>
+          <span>2D, 3D, VR, mixed reality</span>
+        </div>
+        <div>
+          <strong>Hardware and Sensors</strong>
+          <span>Kinect v2, ESP32, RPLIDAR S2, touch sensor</span>
+        </div>
+        <div>
+          <strong>Interactive Games &amp; Applications</strong>
+          <span>Large screens, branding, multiplayer</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section video-section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Unity project demos and interactive gameplay videos</h2>
+        </div>
+        <div class="video-showcase">
+          <button
+            class="video-player"
+            type="button"
+            data-video-src="public/2d.mp4"
+            data-youtube-id="-PAsTcxJkgs"
+            data-video-title="2D Car Racing Game gameplay video"
+            aria-label="Play 2D Car Racing Game video"
+          >
+            <img
+              class="video-thumb"
+              src="public/2d_car.png"
+              alt="2D car racing gameplay preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">2D Racing</span>
+            <h3>2D Car Racing Game</h3>
+            <p>
+              A simple yet fun 2D racing game designed with smooth controls and
+              responsive mechanics. The game provides a competitive experience
+              for players and demonstrates core gameplay design and physics
+              handling in a 2D environment.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Mobile APK controls</span>
+              <span>2D physics handling</span>
+              <span>Responsive mechanics</span>
+              <span>Competitive gameplay</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-alt">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="A4a3Gro1J0Y"
+            data-video-title="Draw to Life Interactive Kite Experience video"
+            aria-label="Play Draw to Life Interactive Kite Experience video"
+          >
+            <img
+              class="video-thumb"
+              src="public/kight.png"
+              alt="Draw to Life interactive kite experience preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Interactive Installation</span>
+            <h3>Draw to Life - Interactive Kite Experience</h3>
+            <p>
+              Players color a kite on paper, then scan it using a webcam to
+              bring it to life on a big screen with animation. This project
+              showcases real-time image recognition and interactive visual
+              transformation for an engaging user experience.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Webcam scanning</span>
+              <span>Image recognition</span>
+              <span>Big screen animation</span>
+              <span>Interactive visual transformation</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-portrait">
+          <button
+            class="video-player video-player-portrait"
+            type="button"
+            data-youtube-id="AK6KMK0ohNk"
+            data-video-title="3D Endless Runner Gesture-Based Experience video"
+            aria-label="Play 3D Endless Runner Gesture-Based Experience video"
+          >
+            <img
+              class="video-thumb"
+              src="public/1endlessrunner.png"
+              alt="3D endless runner gesture-based gameplay preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Kinect v2 Experience</span>
+            <h3>3D Endless Runner - Gesture-Based Experience</h3>
+            <p>
+              This game has been used in malls and corporate events as a live
+              interactive experience for product branding. It uses Kinect v2
+              Xbox to capture real-time human gestures, allowing players to
+              control the character, dodge obstacles, and avoid collisions.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Kinect v2 gesture control</span>
+              <span>Live event branding</span>
+              <span>Obstacle dodging</span>
+              <span>Portrait Shorts video</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-alt">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="swGrCvdS5do"
+            data-video-title="VR Punching Game Mixed Reality Experience video"
+            aria-label="Play VR Punching Game Mixed Reality Experience video"
+          >
+            <img
+              class="video-thumb"
+              src="public/1vrpunching.png"
+              alt="VR punching mixed reality gameplay preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">VR / Mixed Reality</span>
+            <h3>VR Punching Game - Mixed Reality Experience</h3>
+            <p>
+              A VR-based punching game where objects appear in front of the
+              player, and the player must hit them using the correct colored
+              gloves. The game is also developed using mixed reality, creating
+              an immersive and interactive experience with real-time motion
+              tracking and engaging gameplay.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>VR gameplay</span>
+              <span>Mixed reality</span>
+              <span>Motion tracking</span>
+              <span>Color-based punching</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase">
+          <button
+            class="video-player"
+            type="button"
+            data-video-src="public/3d.mp4"
+            data-youtube-id="BY1E0xbHOik"
+            data-video-title="3D Multiplayer Car Racing gameplay video"
+            aria-label="Play 3D Multiplayer Car Racing video"
+          >
+            <img
+              class="video-thumb"
+              src="public/13dcarrace.png"
+              alt="Split-screen 3D multiplayer racing gameplay preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Two Player Racing</span>
+            <h3>3D Multiplayer Car Racing</h3>
+            <p>
+              A 3D car racing game built for two players, where the gameplay is
+              displayed on a large screen and controlled using mobile devices.
+              This project focuses on real-time multiplayer interaction, smooth
+              vehicle movement, and creating an engaging shared gaming experience.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Large screen gameplay</span>
+              <span>Mobile device controls</span>
+              <span>Real-time multiplayer</span>
+              <span>Smooth vehicle movement</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-alt">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="pUCT5MxEjMU"
+            data-video-title="Real-Time Multiplayer Cycling Game video"
+            aria-label="Play Real-Time Multiplayer Cycling Game video"
+          >
+            <img
+              class="video-thumb"
+              src="public/1cyclerace.png"
+              alt="Real-time multiplayer cycling game preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">ESP32 Fitness Game</span>
+            <h3>Real-Time Multiplayer Cycling Game</h3>
+            <p>
+              A 3D cycling game where players pedal a real bicycle, and the
+              data is captured using an ESP32 device in real time. This data is
+              used to control a virtual 3D character riding a cycle in the game.
+              The project features multiplayer competition between two players
+              along with a live leaderboard.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>ESP32 sensor data</span>
+              <span>Real bicycle input</span>
+              <span>Two-player multiplayer</span>
+              <span>Live leaderboard</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-portrait">
+          <button
+            class="video-player video-player-portrait"
+            type="button"
+            data-youtube-id="9J5mENwvPxY"
+            data-video-title="Interactive Wall LiDAR-Based Experience video"
+            aria-label="Play Interactive Wall LiDAR-Based Experience video"
+          >
+            <img
+              class="video-thumb"
+              src="public/1interactivewall.png"
+              alt="Interactive wall LiDAR-based experience preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">RPLIDAR S2</span>
+            <h3>Interactive Wall - LiDAR-Based Experience</h3>
+            <p>
+              An interactive wall system built using RPLIDAR S2, where user
+              touch and movement are detected on a large display surface. The
+              interaction triggers dynamic branding visuals in real time using a
+              custom Unity RPLIDAR integration library and advanced masking
+              techniques for accurate interactive zones.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>RPLIDAR S2</span>
+              <span>Custom Unity library</span>
+              <span>Real-time touch detection</span>
+              <span>Advanced masking zones</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-alt">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="9jFt1hsj7bI"
+            data-video-title="2D Memory Game Multiplayer video"
+            aria-label="Play 2D Memory Game Multiplayer video"
+          >
+            <img
+              class="video-thumb"
+              src="public/1memory.png"
+              alt="2D multiplayer memory game preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Touchscreen Multiplayer</span>
+            <h3>2D Memory Game - Multiplayer</h3>
+            <p>
+              A 2-player memory game played on a large touch screen. Players
+              get a few seconds to remember tile positions, then match pairs
+              from memory. The fastest player to complete all pairs wins and
+              appears on the leaderboard.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>2-player gameplay</span>
+              <span>Large touch screen</span>
+              <span>Timed memory phase</span>
+              <span>Leaderboard winner</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Skill Set</p>
+          <h2>Unity development for games, sensors, interactive experiences, and installations</h2>
+        </div>
+        <div class="skill-list">
+          <div>
+            <h3>Gameplay</h3>
+            <p>Racing controls, endless runner movement, VR punching, memory matching, scoring, and win states.</p>
+          </div>
+          <div>
+            <h3>Hardware</h3>
+            <p>Kinect v2 gesture input, ESP32 cycling data, RPLIDAR S2 touch detection, touch sensor input, webcam scanning, and mobile controls.</p>
+          </div>
+          <div>
+            <h3>Large Screen Systems</h3>
+            <p>Touchscreen gameplay, split-screen multiplayer, leaderboards, brand advertising installations, and public display UI.</p>
+          </div>
+          <div>
+            <h3>Reactive Arena</h3>
+            <p>Animation, visual feedback, responsive UI, masking zones, motion tracking feedback, and presentation-ready game flow.</p>
+          </div>
+          <div class="skill-wide">
+            <h3>Skills & Technologies Used</h3>
+            <ul class="tech-list">
+              <li>Unity 2D Game Development</li>
+              <li>C# Programming</li>
+              <li>Interactive Touch Applications</li>
+              <li>Sensor-Based Touch for Large Screens</li>
+              <li>Game Logic and State Management</li>
+              <li>Multiplayer Gameplay Logic</li>
+              <li>Timer and Scoring System</li>
+              <li>Leaderboard System Implementation</li>
+              <li>Puzzle Games</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section process-section">
+        <div class="section-heading">
+          <p class="eyebrow">Build Process</p>
+          <h2>How interactive game experiences are built</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>01</span>
+            <h3>Input Setup</h3>
+            <p>Connect the control method first: mobile device, touch screen, Kinect, ESP32, webcam, VR, or LiDAR.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Gameplay Systems</h3>
+            <p>Build racing, runner, punching, memory, leaderboard, scoring, branding, and multiplayer logic around the input.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Event Ready Build</h3>
+            <p>Polish the visuals, screen flow, feedback, responsiveness, and stability for live public use.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Need a Unity Developer<br />for an interactive game, event installation, or branded experience?</h2>
+          <p>
+            Reach out for Unity racing games, VR and mixed reality, Kinect gesture
+            games, LiDAR walls, ESP32-based fitness games, touchscreen games, and
+            mobile-controlled large-screen experiences.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:kotreshsangadi1001@gmail.com">kotreshsangadi1001@gmail.com</a>
+          <a href="https://linkedin.com/in/kotresh-sa-b94506240" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          <a href="https://wa.me/919380891001" target="_blank" rel="noreferrer">Message on WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
