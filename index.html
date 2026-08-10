@@ -6,7 +6,7 @@
     <title>Kotresh | Unity Developer Portfolio</title>
     <meta
       name="description"
-      content="Unity developer portfolio featuring multiplayer racing games, Kinect gesture games, VR and mixed reality, LiDAR interactive walls, ESP32 cycling, and large-screen event experiences."
+      content="Unity developer portfolio featuring multiplayer racing games, Kinect gesture games, a temple run style endless runner with Kinect and mobile versions and dynamic path generation, VR and mixed reality, a Kinect and VR table tennis game, Neon Rush tunnel runner for Android, Windows and VR, LiDAR interactive walls, ESP32 cycling, and large-screen event experiences."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,9 +38,11 @@
           <p class="eyebrow">Unity Interactive Experience Developer</p>
           <h1>Kotresh builds games for screens, sensors, events, and real players.</h1>
           <p class="hero-copy">
-            Multiplayer racing, Kinect gesture control, VR punching, LiDAR walls,
-            ESP32 cycling, touchscreen memory games, and webcam-based draw-to-life
-            experiences built with Unity and C#.
+            Multiplayer racing, Kinect gesture control, VR punching, Kinect and VR
+            table tennis, a temple run style endless runner with Kinect and mobile
+            versions, the Neon Rush tunnel runner on Android, Windows and VR,
+            LiDAR walls, ESP32 cycling, touchscreen memory games, and
+            webcam-based draw-to-life experiences built with Unity and C#.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Work</a>
@@ -330,6 +332,112 @@
             </div>
           </div>
         </div>
+        <div class="video-showcase">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="NxR-3KW-85U"
+            data-video-title="Table Tennis Game with Kinect and VR video"
+            aria-label="Play Table Tennis Game with Kinect and VR video"
+          >
+            <img
+              class="video-thumb"
+              src="public/1tabletennis.png"
+              alt="Table tennis game with touch TV, Kinect sensor, mobile control, and VR headset modes"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Kinect + VR</span>
+            <h3>Table Tennis Game - Kinect and VR</h3>
+            <p>
+              A versatile table tennis game that supports multiple interaction
+              methods: touch input on a TV screen, full body tracking with the
+              Kinect sensor, mobile gyroscope and accelerometer control, and an
+              immersive VR headset mode with motion controllers. Mobile devices
+              connect to the Unity game through a WebSocket server bridge for
+              real-time input. VR headset multiplayer is currently in development.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Kinect full body tracking</span>
+              <span>VR headset motion controllers</span>
+              <span>Mobile gyroscope input</span>
+              <span>WebSocket server bridge</span>
+              <span>VR multiplayer in development</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase video-showcase-alt">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="ax2ySnWo08U"
+            data-video-title="Neon Rush rotating tunnel runner gameplay video"
+            aria-label="Play Neon Rush rotating tunnel runner video"
+          >
+            <img
+              class="video-thumb"
+              src="public/neonrush.png"
+              alt="Neon Rush neon tunnel runner gameplay preview"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Android / Windows / VR</span>
+            <h3>Neon Rush - Rotating Tunnel Runner</h3>
+            <p>
+              An endless neon tunnel runner where the player rotates the tunnel
+              itself to line up a safe gap and slip past incoming barriers. The
+              same game ships across three platforms: touch and swipe controls on
+              Android, keyboard controls on Windows, and a headset build where
+              players rotate the tunnel in VR.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Tunnel rotation controls</span>
+              <span>Barrier dodging gameplay</span>
+              <span>Android build</span>
+              <span>Windows build</span>
+              <span>VR headset build</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-showcase">
+          <button
+            class="video-player"
+            type="button"
+            data-youtube-id="QORYx0m4nLE"
+            data-video-title="Temple Run style Kinect gesture endless runner gameplay video"
+            aria-label="Play Temple Run style Kinect gesture endless runner video"
+          >
+            <img
+              class="video-thumb"
+              src="public/templerun.png"
+              alt="Temple run style endless runner controlled by body movement in front of a large screen"
+            />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="video-copy">
+            <span class="tag">Kinect Gesture + Mobile</span>
+            <h3>Temple Run Style Runner - Kinect Gesture and Mobile</h3>
+            <p>
+              A temple run style endless runner built from scratch in Unity and
+              shipped in two versions: a Kinect gesture sensor build for large
+              screens, where players run, jump, slide and dodge with real body
+              movements, and a mobile application build with swipe controls. The
+              track is generated dynamically at runtime, so every run creates a
+              fresh path of tiles, obstacles and coins with no fixed level, and
+              the whole game is fully optimized with object pooling and tile
+              recycling to hold a steady frame rate on both platforms.
+            </p>
+            <div class="feature-pills" aria-label="Project features">
+              <span>Kinect gesture control</span>
+              <span>Mobile application build</span>
+              <span>Dynamic path generation</span>
+              <span>Object pooling and tile recycling</span>
+              <span>Fully optimized performance</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="skills" class="section split-section">
@@ -340,7 +448,7 @@
         <div class="skill-list">
           <div>
             <h3>Gameplay</h3>
-            <p>Racing controls, endless runner movement, VR punching, memory matching, scoring, and win states.</p>
+            <p>Racing controls, endless runner movement, VR punching, table tennis rallies, memory matching, scoring, and win states.</p>
           </div>
           <div>
             <h3>Hardware</h3>
@@ -363,8 +471,12 @@
               <li>Sensor-Based Touch for Large Screens</li>
               <li>Game Logic and State Management</li>
               <li>Multiplayer Gameplay Logic</li>
+              <li>WebSocket Server Bridge for Mobile Input</li>
+              <li>VR Headset and Motion Controller Input</li>
               <li>Timer and Scoring System</li>
               <li>Leaderboard System Implementation</li>
+              <li>Dynamic and Procedural Path Generation</li>
+              <li>Object Pooling and Performance Optimization</li>
               <li>Puzzle Games</li>
             </ul>
           </div>
